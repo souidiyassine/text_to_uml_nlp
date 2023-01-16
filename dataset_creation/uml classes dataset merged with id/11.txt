@@ -1,0 +1,3 @@
+11
+Each document is composed of one or more sheets. A sheet contains text and geometrical objects which constitute two types of graphic objects supporting operations such as: select, copy, cut, paste and move. 
+We consider the following four geometric objects: circle, ellipse, square, rectangle. We are asked to use the properties of generalization and specialization in order to represent these geometric objects in the best possible way. 

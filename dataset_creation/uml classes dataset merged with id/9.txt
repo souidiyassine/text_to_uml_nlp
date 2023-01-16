@@ -1,0 +1,2 @@
+9
+A token-ring based local-area-network (LAN) is a network consisting of nodes, in which network packets are sent around. Every node has a unique name within the network, and refers to its next node. Different kinds of nodes exist: workstations are originators of messages; servers and printers are network nodes that can receive messages. Packets contain an originator, a destination and content, and are sent around on a network. A LAN is a circular configuration of nodes.

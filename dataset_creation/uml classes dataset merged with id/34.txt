@@ -1,0 +1,8 @@
+34
+each type of product has a unique code (barcode label), and the same price for all products of this type. the objective is to facilitate the maintenance of the prices of the articles.
+each type of product is referenced in a catalog, with its associated price. When the price of a product must be modified, the manager modifies its price in the catalog, then on the floor where it is stored.
+The cashier identifies himself to start the cash register (with a password).
+the cash register will carry out the usual functions of a cash register: subtotal calculation, total calculation, possibility of entering several items with the same code, return of goods with the receipt. Payment will be in cash only.
+The cash register allows you to edit reports:
+· the receipt which will be given only for an effective sale . it contains the store name, a welcome message, the date and time. Then for each sale it gives the product code, product description, unit price, quantity and subtotal. Finally we find the total including VAT
+· The detailed daily report: list of the detailed set of sales for the day.

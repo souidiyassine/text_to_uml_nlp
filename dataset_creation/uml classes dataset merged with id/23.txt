@@ -1,0 +1,10 @@
+23
+A real estate agency lists a number of properties of different types for sale. Properties that gets sold
+are removed from the list, and new ones can be added. The maximum number of properties the
+agency can handle at a given time is 100.
+All property entries show the property area in m2
+, number of rooms, neighborhood name, and price.
+Description of each of the types of listed properties include:
+Villa: has a swimming pool or not, and number of adjacent streets
+Apartment: on which floor? and is there a parking lot?
+Furnished apartment: furniture quality on a scale 1(best) to 5

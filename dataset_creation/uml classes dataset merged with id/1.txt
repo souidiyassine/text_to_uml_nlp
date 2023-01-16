@@ -1,0 +1,40 @@
+1
+The objective of the program is to manage purchases and loans of documents (paper, video, sound, etc.) to users of a municipal library.
+
+There are several types of documents:
+
+the books, and among them special books that will be consulted only on site
+the newspapers which will be consulted only on site
+microfilms, which relate to books or newspapers already referenced in the library and which can only be viewed on the screens of the library
+documentary CD-ROMs (encyclopaedias, museum visits, etc.) which can be loaned with a deposit
+Each document is identified by its dimension; A book or a CD-ROM can also be found by its title and its author(s), a newspaper by its title and its date; The same for a microfilm.
+
+In concrete terms, the user can consult the list of documents on a computer station, a sequential consultation in alphabetical order according to the type of document, sequential by author (all types of documents combined), by the document's symbol or by its reference (title, etc.). ).
+
+Then, the user must pick up the document, either directly in the shelving where it is stored for books and newspapers, or at a counter for CD-ROMs and microfilms.
+
+The CD-ROM will only be given to him in exchange for a deposit, after he has presented his reader's card. This deposit will be returned to him when the CD-ROM is returned. The library has computer stations allowing on-site consultation of the CD-ROMs.
+
+The microfilm will be given to him on the condition that a reading screen is free; in fact, a microfilm can never be loaned at home.
+
+If he wishes to borrow a CD-Rom or a book from home, he must go out to a library employee and provide him with his reader's card and the document; the employee then references the borrowing by the reader's number and by the document's call number.
+
+Any distribution of CD-ROM or microfilm generates a loan card in the computer system. Likewise when borrowing a book or CD-ROM from home
+
+The purchase of documents, as well as the registration of new users will be carried out only by the staff of the library. Loans of documents to users can be made by the staff of course, but also by a team of volunteers who will only have this right granted for a limited period. Users will be able to consult the list of documents and find out if they are available (neither lent nor lost).
+
+The registration of a new document generates a unique and non-recoverable number (its coast); this number is incremented automatically.
+
+The same goes for registering new readers.
+
+However, it is possible to modify the characteristics of the reader files (address, etc.) and to decommission a document that has been lost or stolen.
+
+You can never remove a document file or a reader file; a second approach to the problem will make it possible to manage the excess of unused reader files (moving the reader, etc.).
+
+A loan will only be granted on the condition that the reader has paid his subscription and has no more than 5 simultaneous loans.
+
+The loan is dated and after 4 weeks a follow-up letter will be sent to the reader.
+
+These reminders will be made at the request of the librarian.
+
+Library employees can consult the status of readers (number of borrowings, which ones, etc.)

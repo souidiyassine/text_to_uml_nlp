@@ -1,0 +1,16 @@
+6
+We want to automate the management of a small municipal library. For this, we analyzed its operation to obtain the following list of rules and statements:
+Members have a first name (character string) and a surname (character string).
+The library consists of a set of documents and a set of patrons.
+Members are subscribed or unsubscribed on a simple request.
+New documents are added to the library regularly.
+These documents are either journals or volumes.
+Volumes are either dictionaries, books or comics.
+The documents are characterized by a title (character string).
+Volumes also have an author (character string). Bds also have a recipient name (character string).
+The newspapers have, in addition to the characteristics of the documents, a date of publication (a date).
+Only books can be borrowed.
+A member can borrow or return a book.
+Members can borrow books (and only books) and it must be possible to know at any time which books a member has borrowed.
+A member can borrow a maximum of 3 books.
+The return date for a borrowed book is fixed at the time of the loan. This date can be extended upon request.

@@ -1,0 +1,2 @@
+38
+Every day, the mailman delivers registered mail in a geographical area assigned to him. The inhabitants are also associated with a geographical area. There are two types of registered mail: letters and parcels. As several letter carriers can intervene in the same area, we want, for each registered letter, the letter carrier who delivered it, in addition to the addressee.

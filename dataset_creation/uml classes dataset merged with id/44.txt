@@ -1,0 +1,2 @@
+44
+A house may have any number of pets living in it. The two possible types of pets that can live in a house are dogs and cats. Each dog or cat has a name. An animal’s house is its one and only home. You can ell an animal to make noise and it will do its thing.

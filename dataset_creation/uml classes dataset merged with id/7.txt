@@ -1,0 +1,2 @@
+7
+ATMs are deceptively simple: although customers only need to press a few buttons to receive cash, there are many layers of security that a safe and effective ATM must pass through to prevent fraud and provide value for banking customers. The various human and inanimate parts of an ATM system are illustrated by this easy-to-read diagram—every class has its title, and the attributes are listed beneath. You can edit, save, and share this chart by opening the document and signing up for a free Lucidchart account.

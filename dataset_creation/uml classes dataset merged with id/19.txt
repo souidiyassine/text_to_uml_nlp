@@ -1,0 +1,5 @@
+19
+An employee takes care of registering the loans of members who want to borrow the CD-ROMs. The employee must first authenticate to perform this operation. Each cd borrowed must be returned to the library employee after a period of 3 days. The member can therefore reserve CD-ROMs containing games, each reservation must mention the borrower, the game and the date of reservation. The member is notified when the game (cd) returns to the shelves.
+The employee can also organize events, to do so he must provide the following information: the minimum and maximum number of participants, the games to be tested, the date of the event and the start time of the event.
+The member who wishes to participate in an event can register provided that there is still space available. To do so, he must enter a password and login.
+If the member finds an available place then he can pay his subscription online by an external payment system.

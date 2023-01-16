@@ -1,0 +1,12 @@
+5
+Anyone who has carried out a professional activity for 5 years related to the subject of their application may apply for a technological and vocational education diploma from the Center for Validation of Acquired Skills of the Academy of their place of residence. .
+
+The employee obtains a blank file from the Academy's Acquired Validation Center (CAVA). After completing the file, the employee sends it to the CAVA. The file contains the civil status of the candidate (surname, first name, address), a description of his professional activities for 5 years, the diploma requested. The files are registered in the CAVA database (a reference number is automatically assigned to them).
+
+The CAVA sends the file to the home of the Academy inspector responsible for the diploma concerned. The inspector verifies whether the file is admissible. That is to say, if the diploma requested corresponds to the professional activities of the candidate for at least 5 years. The inspector communicates his decision to the CAVA, which records it in its database. If the file is admissible, an acknowledgment of receipt is sent to the candidate; otherwise the file is returned to the candidate with a letter indicating the reasons for the refusal of the file.
+
+There is one jury per diploma. A jury is made up of the Academy inspector responsible for the diploma and teachers. The CAVA knows the contact details of the teachers who are members of a jury. Each jury meets three times a year.
+
+The schedule of jury meetings is established by the Academy inspector responsible for the diploma concerned, at the start of the school year. Three weeks before a meeting of a jury, the CAVA summons the members of the jury as well as the candidates with a pending diploma application file (concerning the diploma under the responsibility of the jury).
+
+At the end of a meeting, the jury draws up minutes in which the decisions of the jury are summarized (acceptance or refusal of the diploma). Depending on this report, the CAVA sends a certificate of diploma to the candidates or a refusal of diploma.

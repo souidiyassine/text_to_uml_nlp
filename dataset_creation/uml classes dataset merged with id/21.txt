@@ -1,0 +1,8 @@
+21
+Or a media library for the borrowing of works by registered customers using a registration form containing their information (name, address, etc.). We have three types of customers, a customer at reduced rates, a customer who subscribes for a year or a customer at a normal rate. All loans have a fixed duration which does not exceed 10 days.
+A customer can borrow different types of work: audio, video or books. These works are recorded in the media library by a unique code. On the other hand, there are documents that the customer cannot borrow, but can only be consulted on site.
+Each book has a particular type, for example the books have a "novel" type, or are of the "detective" type, etc.
+After borrowing a book, the librarian creates a borrowing sheet. This sheet must contain the name of the customer, the date of loan and the date of return. The librarian can add or delete a client or a work.
+The borrowing of a document by a client follows certain rules:
+The maximum number of documents to borrow is 5, if it exceeds this number then any new borrowing will be impossible.
+If the customer who has borrowed a document and who has not returned it, his return deadline will be blocked from making any new loan until he has returned the work, even if the maximum number of borrowing is not reached.

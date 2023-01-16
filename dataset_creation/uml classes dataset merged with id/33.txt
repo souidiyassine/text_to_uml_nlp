@@ -1,0 +1,4 @@
+33
+Consider a company with six factories that builds engine components. A single factory takes care of the assembly,
+Customers place orders, priority customer places orders first with 20% more of the order. Orders are received by the sales department. If the customer places more than ten orders then he has priority. After processing the orders received, the sales department obtains a breakdown of the parts: manufactured parts and subcontracted parts.
+The sales department can print two types of listings: home listing sent to the factory, and a listing of the subtracted components sent to the stock management department which takes care of the supply of raw materials. The assembly plant then finalizes the order at the final stage. Among the tasks also of the sales department is the follow-up of invoicing.

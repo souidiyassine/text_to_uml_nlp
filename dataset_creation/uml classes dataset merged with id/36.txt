@@ -1,0 +1,3 @@
+36
+Consider an information system that concerns the monitoring of the personnel of a set of local agencies. Each agency is located in a region, each region is managed by a regional management. The regional management is in charge of a set of local agencies.
+a regional directorate is characterized by a code and a wording.

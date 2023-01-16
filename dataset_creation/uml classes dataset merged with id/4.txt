@@ -1,0 +1,10 @@
+4
+To facilitate its management, a storage warehouse plans to computerize. The software to be produced must automatically allocate a location for the loading of the trucks that convey the stock to be stored.
+
+The operation of the computer system must be as follows:
+
+unloading a truck: when a truck arrives, an employee must enter the characteristics of each item into the system; the system then produces a list with a location for each item;
+loading a truck: the characteristics of the items to be loaded into a truck are entered by an employee in order to indicate to the system to free up slots.
+Loading and unloading is done manually.
+
+Warehouse employees are under the responsibility of a manager whose role is to supervise the proper application of the instructions.

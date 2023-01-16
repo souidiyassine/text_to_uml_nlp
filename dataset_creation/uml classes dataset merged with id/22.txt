@@ -1,0 +1,3 @@
+22
+The popular bank in Morocco contains several agencies, it is characterized by its name (popular bank) and directed by a director, has a capital and an address. THE director of the bank has a name, first name, age and salary (or income). Each agency has an address, employees and an identifier. Each employee also has a surname, first name and date of hire. An employee only works in one agency, but can request a transfer to another agency. An employee can manage one or more customers, the latter has a single account in a given agency, a name, first name and an address. Each registered customer is assigned to an employee in the agency.
+An account can either be a paid or unpaid account. Interest-bearing accounts have an interest rate paid annually

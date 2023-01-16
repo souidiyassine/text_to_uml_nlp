@@ -1,0 +1,6 @@
+20
+Either in a school that performs the following functions:
+Develop catalogs that describe the courses and give the estimated dates of the sessions.
+Register people who wish to participate in the sessions and send them their invitation.
+Determine the trainers who will lead the sessions. Some sessions may be led by individual contractors.
+Some courses are organized into sectors. The courses use referenced documents.

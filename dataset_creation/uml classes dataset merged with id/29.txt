@@ -1,0 +1,11 @@
+29
+Airlines offer different flights
+A flight is open for booking and closed by order of the company
+A customer can book one or more flights, for different passengers
+A reservation concerns a single flight and a single passenger
+A reservation can be confirmed or canceled
+A flight has a departure airport and an arrival airport
+A flight has a day and time of departure, and a day and time of arrival
+A flight may include stopovers in one or more airport(s)
+A stopover has a departure time and an arrival time
+Each airport serves one or more cities

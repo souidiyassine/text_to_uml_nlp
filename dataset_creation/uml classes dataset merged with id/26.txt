@@ -1,0 +1,12 @@
+26
+Design a system for a movie-shop, in order to
+handle ordering of movies and browsing of the
+catalogue of the store, and user subscriptions with
+rechargeable cards.
+Only subscribers are allowed hiring movies with
+their own card.
+Credit is updated on the card during rent
+operations.
+Both users and subscribers can buy a movie and
+their data are saved in the related order.
+When a movie is not available it is ordered 

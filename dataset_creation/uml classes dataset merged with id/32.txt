@@ -1,0 +1,4 @@
+32
+Each hotel contains a number of rooms, each room is rented by a fixed price. The manager of the hotel manages the rental of the rooms.
+Access to the bathrooms is free since it is included in the price of the rooms. Some rooms do not have a bathroom. The other rooms, such as kitchen, reception hall, are not part of the study. People can rent one or more rooms in the hotel. In other words: the hotel accommodates a certain number of people.
+The reservation of a room is made by a customer, the manager looks for a free room, if there is the manager gives the price of the room to the customer who becomes the tenant of the room after having paid. Otherwise, the customer leaves.

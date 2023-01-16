@@ -1,0 +1,18 @@
+31
+A company offers several trains.
+A train is closed or open for reservation.
+A customer can book one or more trains.
+Each reservation concerns a single passenger and a single train.
+Two states for a reservation: either canceled or confirmed.
+A train has an arrival station or a departure station.
+A train has a departure day, a departure time, and an arrival time.
+A train may include stops at stations.
+A stop has a departure time and an arrival time.
+Each station organizes trips to one or more cities.
+A station has a name, organizes trips to several cities.
+a station has a name.
+a customer or passenger has a surname, first name, address and telephone number.
+a company has a name.
+a stop and linked to a departure time and an arrival time.
+a city has a name.
+a train has an identifier, a departure and arrival date, a departure and arrival time.

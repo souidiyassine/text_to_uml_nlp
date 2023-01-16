@@ -1,0 +1,2 @@
+43
+Cinemas are composed of several rooms. Films are shown in theaters. The corresponding screenings take place at a specific time each.

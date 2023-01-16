@@ -1,0 +1,2 @@
+40
+Let the following sentences apply: A directory contains files. A room contains walls. Modems and keyboards are input/output devices. A stock exchange transaction is a purchase or a sale. A bank account can belong to a natural or legal person

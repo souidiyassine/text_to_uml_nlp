@@ -1,0 +1,256 @@
+req,labels
+The system shall have a MDI form that allows for the viewing of the graph and the data table.,O O O O O O entity O O O O entity O O entity O O O O O
+The system shall display Events in a vertical table by time.,O O O O O O O O entity O entity O
+The system shall display the Events in a graph by time.,O O O O O O O O entity O entity O
+The Disputes System must be accessible by both internal and external users.,O O O O O O O O O O O O O
+The Disputes System must prevent users from accessing any dispute cases that do not belong to their cardholder base.,O O O O O O O entity O O O O O O O O O O O O
+The Disputes System will facilitate direct data entry of a dispute case via a user interface that supports real time responses to the users.,O O O O O O O O O O O O O O entity entity O O O O O O O O O
+The Disputes System must provide different levels of access with regard to disputes case initiation and follow-up actions.,O O O O O O attr O entity O entity O O O O O O O O
+The Disputes System shall provide view access capability for authorized users of the application.,O O O O O O O O O O attr O O entity O
+The Disputes System shall provide update access capability for authorized users of the application.,O O O O O O O O O O attr O O entity O
+The Disputes System must allow the users to select disputable transactions (based on the age of the transaction) from a user interface and initiate a dispute (ticket retrieval request or chargeback notification) on the selected transaction.,O O O O O O O O O O O O O O O entity O O entity O O O entity entity O relashionship O entity O O O O O O O O O O relashionship entity O
+The Disputes System must provide the user the ability to initiate a single dispute case on multiple transactions that belong to a single merchant.,O O O O O O entity O entity O O O O O O O O O O O O O O entity O
+The Disputes System will provide the user the ability to create or initiate a ticket retrieval request.   As part of ticket retrieval creation process the system must prompt the user to enter all the required information to create the ticket retrieval request.  The ticket retrieval request is a document that is sent to merchant inquiring the validity of a transaction.,O entity O O O O entity O O O O O entity O entity O O entity O
+The Disputes System must allow the user to create three unique types of ticket retrieval requests.  The three types of ticket retrieval requests are (1) Request for original receipt (2) Request for a copy of the receipt or (3) Request for a portfolio. A portfolio consists of documentation that would provide proof of a purchase such as the documentation that is received from a car rental agency that is more than a sales receipt.,O entity O O attr O O O entity O O entity O O O attr O O O O O entity O entity O O O O O O entity O
+The Disputes System must prevent external users from requesting original receipts. Requests for original receipts are restricted to internal users.,O O O O O O O O O O
+The Disputes System must provide a confirmation to the user upon the creation of ticket retrieval request that contains the following information; the dispute case number  the type of retrieval requested (copy  original or portfolio)  and the date that the merchant response is due.,O O O O O O entity O attr entity O attr entity O O entity O attr O attr O O O attr O O O attr entity O entity O O O entity O entity O O attr entity attr attr O O O O O
+The Disputes System shall allow the user to create or initiate a chargeback request.  The system must prompt the user to enter the required information to initiate a chargeback request. The chargeback request results in a printed chargeback notification that is sent to merchant indicating that their account will be charged back if no proof is provided that the disputed transaction is valid.,O O O O O O O O O O O O O O entity O O entity O O O O O attr O O O O O O entity O O O
+The Disputes System must provide a confirmation to the user upon the creation of a chargeback request. The confirmation must contain the following information; the dispute case number  the type of chargeback requested (pending or immediate)  and the date that the merchant response is due.,O entity O O attr O O O attr O O O attr entity O entity O O entity O O O O attr entity O attr O O O O O
+The Disputes System shall prevent the creation of duplicate dispute requests 100% of the time.,O O O O O O entity O O entity O O entity O O entity O
+The Disputes System shall accurately provide a list of possible reason codes for a given transaction.  The list of possible reason codes must be derived based on the type of transaction and the industry that the merchant belongs to  according to the business rules defined for the Disputes System.,O entity attr O O O O O O O O O entity attr entity O O entity O O entity O O entity O O O O O O O O O O
+The Disputes System must provide the ability to view existing dispute cases.,O O O O O O entity O O O O O O
+The Disputes System must provide Search functionality.  The search method must include the ability to search by (1) the dispute case number  (2) the merchant account number  (3) the cardmember account number and (4) the issuer number.  In addition to the above criteria  the search functionality must further allow the user to limit the results of the search by a date range  the type of dispute (ticket retrieval request or chargeback notification)  the case status (open  closed or all) and the dispute reason code.,O entity O O O O O entity entity O O relashionship O entity O relashionship O O attr O entity O O attr O O entity attr entity O O O O O O O O O O O O O O O O O attr O entity O O attr
+A list of all disputes cases that meet the entered search criteria must be provided to the user.  The list of cases must differentiate the type and/or status of the case by color -coding the line item in the list.  For example all open cases will be yellow and all closed cases will be gray.,O entity O O O O O O O O O O O O O O
+The Disputes System shall provide the users the ability to view the history of all activities that have occurred on the dispute case.,O O O O O O O O entity O relashionship O entity O O O O O O O O O O O
+The Dispute System shall provide the users with the ability to follow up on a dispute case via follow-up actions.  The list of available follow up actions for a given dispute case must be filtered by the status of the case and the access level of the user.,O entity O O O O O O O relashionship entity entity O O O O O entity O O entity O O O attr O O entity O
+The Disputes System shall record the name of the user and the date for any activity that creates or modifies the disputes case in the system.  A detailed history of the actions taken on the case  including the date and the user that performed the action must be maintained for auditing purposes.,O O entity O O O O O O O O O entity attr O entity O relashionship O entity O O O O O O O
+For any systematic (non-user initiated) action that occurs on a case such as the disputes aging process  a case activity will be generated.  Upon the next logon the user that initiated the dispute case must be notified that a systematic action has occurred on the dispute case.,O O O entity O entity O relashionship O O entity O O O O O O entity O O O O O entity O
+All letter requests must be formatted according to guidelines specified by the Print Letter Utility system.,O O O O O O entity O O O O O O O O O O
+Any disputes cases that have been closed for over 6 months must be purged from the online disputes database.,O O O O O O O O O O O O O O O O entity O O O
+The user shall search for the preferred repair facility using vehicle  vehicle location  and radius in miles,O entity O O O O O O O relashionship O O O O entity O O
+The vehicle data shall include vehicle year  make  and model,O O O O relashionship O O O O entity
+The vehicle location shall include street address  city  state  and zipcode,O O O O relashionship entity O attr O O entity
+The system shall resolve the zipcode for the street address  city  and state if zipcode is unknown.,O O O O O entity O O entity O attr O entity O entity O O O
+The search radius shall be between 1 and 30 miles,O entity O O O O O O O O
+The system shall locate the preferred repair facility with the highest ratings for the input criteria,O O O O O O O O O O O O O O O O
+The adjuster shall enter the preferred repair facility on the estimate assignment.,O entity O O O O O O O O O O O
+The adjuster shall be able to override the preferred repair facitlity on the estimate assignment.,O entity O O O O O O O O O O O O O O
+The preferred repair facility shall be returned to the user.,O O O O O O O O O entity O
+The system shall return a list of repair facilities within the radius if the preferred repair facility cannot be determined.,O O O O O entity O O O O O entity O O O O O O O O O O
+The estimator shall search for available recycled parts using damaged vehicle parts information.,O entity O O O O O O O O O O O O
+The estimator shall search for available recycled parts using a list of preferred parts suppliers.,O entity O O O O O O O O entity O O O O O
+The system shall search for available recycled parts for the supplied vehicle parts and suppliers.,O O O O O O O O O O O O O O O O
+The estimator shall search by zipcode with a radius of 30 miles if no parts are found for the preferred parts suppliers,O entity O O O attr O O entity O O O O attr attr O O O O O attr O
+The system shall retain the available recycled parts and suppliers returned from the search.,O O O O O O O O O O O O O entity O
+The available recycled parts information and their suppliers shall be returned to the user.,O O O O O O O O O O O O O entity O
+The estimator shall apply selected recycled parts to the collision estimate.,O entity O O O O O O O O O O
+The estimator shall not apply recycled parts to the collision estimate if no available parts are returned.,O entity O O O O O O O O O O attr O O O O O
+The adjuster shall review the collision estimate.,O entity O relashionship O O O O
+The adjuster shall request a recycled parts audit of the collision estimate.,O entity O O O O O attr O O O O O
+The recycled parts search results provided to the estimator shall be retrieved by the system.,O O O O O O O O entity O O O O O O O
+The system shall generate an audit report based on the available recycled parts and the collision estimate.,O O O O O O O O O O O O O O O O O O
+The audit report shall include the total number of recycled parts used in the estimate.,O O O O O O O entity attr O O O O O entity O
+The audit report shall include the number of available recycled parts from the original search results.,O O O O relashionship O entity attr O O O O O O O O O
+The audit report shall include the percentage of available recycled parts used in the estimate,O O O O relashionship O entity O O O O O O O entity
+The audit report shall include the total score of the audit which sums the indivual line items.,O entity O O O O O entity O O entity O O O O O O O
+The audit report shall be displayed to the user.,O O O O O O O O entity O
+The audit report shall be available to other adjusters at later points in time.,O O O O O O O O O O O O O entity O
+The user shall select to view the preferred repair facility ratings.,O entity O O O O O O O O O O
+The current repair facility ratings shall be displayed to the user.,O O O O O O O O O O entity O
+The system will display a blank set of ratings if there are not ratings yet defined.,O O O O O O entity O O O O O O O O O O
+The user shall enter new ratings based on the audit report,O entity O O O O O O O O O
+The ratings shall be from a scale of 1-10,O O O O O O entity O O
+The ratings shall include categories for attempted use of recycled parts and actual use of recycled parts,O O O relashionship O O O entity O O O O O entity O O O
+The user shall select to save the preferred repair facility ratings.,O entity O O O O O O O O O O
+The preferred repair facility ratings shall be saved by the system.,O O O O O O O O O O O O
+The product shall record meeting entries.,O entity O O O O O
+The product will notify employees of meeting invitations.,O entity O relashionship attr O O O O
+The product shall have the ability to send meeting reminders to employees.,O entity O relashionship O entity O O O O O O O
+The product shall assign the organizers contact information to each meeting they create.,O entity O relashionship O O O O O O entity O O O
+The product will record meeting acknowledgements.,O entity O O O O O
+The product shall store new conference rooms.,O entity O O O O O O
+The product shall update existing conference rooms.,O entity O O relashionship O O O
+The product will be able to delete conference rooms.,O entity O O O O relashionship O O O
+The product shall be able to store new room equipment.,O entity O O O O O O O O O
+The product will update existing room equipment.,O entity O O O O O O
+The product shall be able to delete room equipment.,O entity O O O O relashionship O O O
+The product shall allow an organizer to invite other employees to meetings.,O entity O relashionship O entity O O O O O O O
+Each time a conference room is reserved  the conference room schedule shall be updated to reflect the time and date of the reservation.,O entity O O O O relashionship O O O O O O O O relashionship O entity O entity O O entity O
+The product shall record the transportation status of equipment reserved.,O entity O relashionship O O attr O entity O O
+The product shall display a map of the company building showing conference room locations.,O entity O relashionship O entity O O O O O O O O O
+The product shall record updated meeting agendas.,O entity O O O O O O
+The product shall send a meeting confirmation to the meeting organizer.,O entity O relashionship O O O O O O O O
+The product shall display room equipment according to search parameters.,O entity O relashionship O O O O O O O
+The product shall display conference rooms according to search parameters.,O entity O relashionship O O O O O O O
+The product shall record different meeting types.,O entity O O O O O O
+The product shall record all the equipment that has been reserved.,O entity O O O O entity O O O O O
+The product shall notify building personnel of equipment transport requests.,O entity O relashionship O attr O O O O O
+The product will allow priviledged users to view meeting schedules in multiple reporting views.,O entity O O relashionship O O O O O O O O O O
+The product shall be able to send meeting notifications via different kinds of end-user specified methods.,O entity O O O O O O O O O attr O entity relashionship O O
+The product shall have a customizable Look and Feel.,O entity O O O O O O O O
+The product shall have an intuitive user interface.,O entity O O O O O O O
+The product will display an available status for unreserved conference rooms.,O entity O O O O entity O O O O O
+The System shall allow generation of Inventory Quantity Adjustment documents on demand.,O O O O entity O O O O O O entity O
+The System shall allow on demand generation of all Inventory Quantity Adjustment documents since certain point of time.,O O O O O O O O O O O O O O O entity O entity O
+The IQA subsystem shall take into account current inventory status and adjust inventory of substitutionary ingredients accordingly.,O O entity O O O attr O entity O O O entity O O O O O
+The System shall allow entering  storing and modifying product formulas.,O O O O O O O O O O O
+Product formulas shall allow use of semi-products  which have own formulas.,O O O O entity O entity O O relashionship O O
+Product formula ingredients shall allow defining substitutionary ingredients.,O O O O O entity O O O
+Product formula substitutionary ingredients shall be entered automatically by the PFE subsystem.,O entity O O O O O O O O O entity O
+Formula substitutionary ingredients shall be kept in persisted order,O O O O O O O O entity
+Product shall allow entering  storing and modifying product menus used by POS terminals.,O O O O O O O O O O O O O O
+PME Subsystem shall allow building product menus based on the list of products kept in the accounting system.,O O O O O entity O O O O entity O O O O O O O O
+PME Subsystem shall allow keeping submenus within menus and products within submenus in a managed and persisted order.,O O O O O O O O O O O O O O entity O O entity O
+PME Subsystem shall allow for a product to exist in more than one submenu,O O O O O O entity O O O O O O entity
+The RMS System shall have Windows XP look and feel and use GUI futures making its use intuitive.,O O O O O O O entity O entity O entity O O O O entity O O
+The System shall generate Inventory Quantity Adjustment document based on product daily sales data and product formulas.,O O O O O O O entity O O attr O O O O attr O O
+The System shall generate Inventory Quantity Adjustment document automatically when daily Product Sales data is available.,O O O O O O O entity O O O O O O O O O
+The website will allow customers to search for movies by title  actor  or director.,O O O O O O O O attr O O O O entity O
+viewing a movie details  the website will display the movies description  actor  and director entered in by the administrator.,entity O O O O O O O O O O O O entity O O O O entity O
+Website shall request  and authorize credit card payment before allowing a user to stream a movie.,O O O O O entity O entity O entity O entity O relashionship O entity O
+shall be able to stream purchased movie via Windows Media Player  for up to 2 days aftere purchase date.,O O O O O O entity O O O O O O O O O O O attr O
+Website shall allow customers to browse movies by categories entered in by izogn administrator.,O O O O O relashionship O O O O O O O entity O
+Website shall allow customers to view reviews of selected movies by other customers.,O O O O O relashionship attr O relashionship O O O O O
+Website shall allow customers to add their own movie review for a selected movie.,O O O O O O O O entity O O O O entity O
+Website shall allow the Izogn administrator to approve a review posted by a customer.,O O O O O entity O O O entity O O O entity O
+System will allow customers to pay for a streaming movie with a pre-paid card.,O O O O O O O O O entity O O O entity O
+Website shall allow customers to purchase pre-paid cards of $5  $10  or $20 value either by credit card or mail-in payment option.,O O O O O O O attr O O O O O O O O entity O O O entity O O O O O
+System shall automatically update the main page of the website every Friday  and show the 4 latest movies that have been added to the website.,O O O O O O entity O O O O O O O O O O O O O O O O O O O
+System shall allow users to update their billing and contact information via the Ã¯Â¿Â½My AccountÃ¯Â¿Â½ section of the website.,O O O O O O O entity O O O O O O O entity O O O O
+Pre-paid cards shall be distributed via email  or via a printed paper card.,O O O O O O attr O O O O O entity O
+Only registered customers can purchase streaming movies.,O O O O O O O O
+Movies can only be streamed if the customer has purchased a movie  and is within the 2-day time period to stream the movie.,O O O O O O O entity O relashionship O entity O O O O O O O O relashionship O entity O
+Website must be able to support free trial periods with various parameters set by the Izogn Manager.,O O O O O O O O O O O O O O O O O O
+All streaming movie sales will be logged in the database  and accessible by the administrator.,O O O O O O O O O O O O O O entity O
+All registered customer information shall be stored and maintained in the database  even after the customer cancels their account.,O O O O O O O O O O O O O O O O O O entity O
+Daily usage statistics should be logged  and accessible by the administrator.,O O O O O O O O O O entity O
+The owner shall have free access to all of the streaming movies.,O entity O O O entity O attr O O O O O
+The vendor will verify the invalid lead.,O entity O O O O entity O
+Vendor will submit a credit validation record to be applied to the enterprise billing system.,O O O O O O O O O O O O O O O O
+If a lead is scored to the high range the system will supply the lead data and score to the enterprise system.,O O entity O O O O O entity O O O O O entity O O entity O O O O O
+The leads washing functionality will validate all leads received by the web service for valid data,O O O O O O O O O O O O O O O entity
+The leads washing functionality will insert all leads captured by the web service.,O O O O O O O O O O O O O O
+If the leads score falls within the high average score then it will be process by the ARA functionality.,O O O relashionship O O O O O relashionship O O O O O O O O entity O
+If the leads score falls within the medium average then it will be set for manual verification by an Enrollment Coordinator through the eleads system.,O O O relashionship O O O O O O O O O O O O entity O O O O O O O O O
+If the leads score falls within the low average then it will be returned to the supplying vendor,O O O relashionship O O O O entity O O O O O O O O O
+The leads washing functionality will compile both contact and academic scoring information for a total score.,O O O O O O O entity O O O O O O O entity O
+The leads washing functionality will use the parameters supplied by corporate and schools to score part of the lead.,O O O O O O O O O O O O O O relashionship entity O O entity O
+The leads washing functionality will return the lead data supplied to the vendor along with the reason of rejection.,O O O O O O O O O O O O entity O O O entity O entity O
+The leads washing functionality will have an interface in which lead data parameters can be maintained.,O O O O O O O entity O O O O O O O O O
+The leads washing functionality will verify the users authentication and rights to make parameter updates.,O O O O O O O O O O O O O O O O
+The leads washing functionality will store any potential lead duplicates returned by the enterprise system.,O O O O O O O O O O O O O O O O
+Prior to submitting the lead to the enterprise system the leads washing functionality will assign the lead to an admissions rep.,O O entity O entity O O O O O O O O O O O entity O O O O O
+The leads washing functionality shall receive a period list of available reps from the enterprise system.,O O O O O O O O O O O O O O O O O
+The product shall maintain a list of players.,O entity O relashionship O entity O O O
+The product shall allow a user to identify himself or herself as a player.,O entity O relashionship O entity O O O O O O O entity O
+Once a game has been initiated  the product shall make the players assigned to the game unavailable for selection from the list of players.,O O entity O O relashionship O entity O relashionship O O O O O entity O O entity O O entity O O O
+The product shall allow a user to remove himself or herself from the list of players at any time.,O entity O relashionship O entity O O O O O O O entity O O O O entity O
+The product shall make inactive players unavailable for selection from the list of players.,O entity O O O O O O entity O O entity O O O
+The product shall remove players who have been inactive for 24 hours from the list of players.,O entity O relashionship O O O O O O O O O O entity O O O
+The product shall allow a player to initiate a game by selecting another available player from the list of players.,O entity O relashionship O entity O relashionship O entity O entity O O entity O O entity O O O
+Once a game is initiated  the product shall display a defensive grid to each player,O O entity O relashionship O entity O O O O entity O O entity
+Once a game is initiated  the product shall display an offensive grid to each player.,O O entity O relashionship O entity O O O O entity O O entity O
+The product shall prevent a player from viewing the offensive or defensive grids of the other player.,O entity O relashionship O entity O entity O O O O attr O O O entity O
+Once a game is initiated  the product shall allow each player to position their 5 ships on their respective defensive grids.,O O entity O relashionship O entity O relashionship O entity O entity O O O O O O O O O
+The product shall allow a player to position ships horizontally on their grid.,O entity O relashionship O entity O O O O O O entity O
+The product shall allow the player to position ships vertically on their grid.,O entity O relashionship O entity O O O O O O entity O
+The product shall allow the player to position ships diagonally on their grid,O entity O relashionship O entity O O O O O O entity
+The product shall prevent the player from overlapping ships on their grid.,O entity O relashionship O entity O O O O O entity O
+When both players have positioned their 5 ships on their defensive grids  the product shall define the status of each player for the first turn.,O O O O O O O O O O O O O entity O relashionship O entity O O entity O O O entity O
+For each turn  the product shall identify one player as offensive status and one player as defensive status.,O O entity O entity O O O entity O O entity O O entity O O entity O
+The product shall maintain the status of each player for a turn  either offensive or defensive.,O entity O relashionship O entity O O entity O O entity O O O O O
+At the start of each turn  the product shall notify each player of his or her status.,O O entity O O entity O entity O relashionship O entity O O O O entity O
+For each turn  the product shall allow the offensive player to define a shot.,O O entity O entity O O O O entity O relashionship O entity O
+For each shot  the product shall examine the defensive grid of the defensive player to determine whether the shot was a hit or miss.,O O entity O entity O O O O entity O O O entity O O O O entity relashionship O entity O entity O
+For each shot  the product shall notify the players whether the shot was a hit or miss.,O O entity O entity O relashionship O O O O entity relashionship O entity O entity O
+For each shot  the product shall mark the shot as a hit or miss on the defensive grid of the defensive player.,O O entity O entity O relashionship O entity O O entity O O O O O entity O O O entity O
+For each shot  the product shall mark the shot as a hit or miss on the offensive grid of the offensive player.,O O entity O entity O relashionship O entity O O entity O O O O O entity O O O entity O
+When the hit results in sinking a ship  the product shall notify the players that the ship was sunk.,O O O O O entity O entity O entity O relashionship O O O O entity relashionship entity O
+When the hit results in sinking a ship  the product shall mark the ship as sunk on the defensive grid of the defensive player.,O O O O O entity O entity O entity O relashionship O entity O entity O O O entity O O O entity O
+When the hit results in sinking a ship  the product shall indicate the type of ship sunk on the defensive grid of the defensive player.,O O O O O entity O entity O entity O relashionship O entity O entity entity O O O entity O O O entity O
+When the hit results in sinking a ship  the product shall mark the ship as sunk on the offensive grid of the offensive player.,O O O O O entity O entity O entity O relashionship O entity O entity O O O entity O O O entity O
+If the shot was marked as a hit  the product shall allow the offensive player to define a shot.,O O entity O O O O entity O entity O O O O entity O relashionship O entity O
+If the shot was marked as a miss  the product shall change the status of the offensive player to defensive,O O entity O O O O entity O entity O relashionship O entity O O O entity O O
+If the shot was marked as a miss  the product shall change the status of the defensive player to offensive,O O entity O O O O entity O entity O relashionship O entity O O O entity O O
+The product shall continue to assign turns until the game is ended.,O entity O O O relashionship O O O entity O O O
+The product shall end a game when a hit by the offensive player results in sinking the last of the defensive playerÃ¯Â¿Â½s ships  which had not been previously marked as sunk.,O entity O relashionship O entity O O entity O O O O O O entity O attr O O O O O O O O O O O O O O
+The product shall allow a player to end a game at any time during the game.,O entity O relashionship O entity O relashionship O entity O O entity O O entity O
+When a game is ended  the product shall notify the players that the game is ended.,O O entity O relashionship O entity O relashionship O O O O entity O relashionship O
+The notification of the game ending will include the reason the game is ended (i.e.  a player has won the game or a player has ended the game).,O entity O relashionship O entity O O entity O relashionship O entity O O
+When a game is ended  the product shall allow each player to identify himself or herself as an available player in the list of players.,O O entity O relashionship O entity O relashionship O entity O O O O O O O O entity O O entity O O O
+When a game is ended  the product shall allow each player to remove himself or herself from the list of players.,O O entity O relashionship O entity O relashionship O entity O O O O O O O entity O O O
+The system shall allow a real estate agent to query MLS information,O O O O O O O O O O O O
+The user shall be able to get driving directions to a selected property,O entity O O O O O O O O O relashionship entity
+The user shall be able to download appointments and contact information for clients,O entity O O O O relashionship O O O O O O
+The system shall display clear property images in the search results,O O O O O O O O O O O
+The system shall be able to call the seller or buyer to schedule an appointment,O O O O O O O O entity O entity O relashionship O entity
+The realtor shall be notified of new client appointments after automatic synchronization with office system,O entity O O attr O O O O O O entity O O O
+The realtor shall be able to retrieve a map showing property locations for a specified area,O entity O O O O O O O O O O O O O entity
+The system shall notify the realtor when a seller or buyer responds to an appointment request,O O O O O entity O O entity O O O O O O O
+The product shall allow the user to save the property search results.,O entity O relashionship O entity O relashionship O O O O O
+A cohort shall be associated to one Program of Study offered by the department.,O entity O O O O O attr O O O O O entity O
+Program Administrators and Nursing Staff Members shall be able to add a listing of students to a cohort.,O O O O O O O O O O O O entity O O O O entity O
+Program Administrators and Nursing Staff Members shall be able to add a single student to a cohort,O O O O O O O O O O O O O entity O O entity
+Students added to a cohort shall be eligible for the cohortÃ¯Â¿Â½s Program of Study.,O O O O entity O O O O O O attr O O O
+Program Administrators and Nursing Staff Members shall be able to specify the preferred sequence of classes for a given cohort.,O O O O O O O O O O O O O entity O O O O relashionship entity O
+For each class within a sequence for a cohort  Program Administrators and Nursing Staff Members shall be able to specify which quarter that class will be offered.,O O entity O O entity O O entity O O O O O O O O O O O O entity O entity O O O O
+For each class within a sequence for a cohort  Program Administrators and Nursing Staff Members shall be able to specify which quarter that class will be offered.,O O entity O O entity O O entity O O O O O O O O O O O O entity O entity O O O O
+Program Administrators and Nursing Staff Members shall be able to add new classes to a sequence of classes,O O O O O O O O O O O O O O O entity O O
+The system shall display data from the Sync Matrix 1.0 and Exercise Management Tool 1.0 applications,O O O O entity O O O O O O O O O O O
+The system shall link Events back to either the Sync Matrix 1.0 or the Exercise Managment Tool 1.0 applications for modifications.,O O O O O O O O O O O O O O O O O O O O O O
+The system shall allow modification of the display.,O O O O entity O O entity O
+The system shall offer a display of all the Events in the exercise.,O O O O O entity O O O O O O entity O
+The system shall filter data by: Venues and Key Events.,O O O O entity O O O O O O O
+The system shall allow a user to define the time segments,O O O O O entity O O O O O
+The system shall display the local and exercise time in separate clocks,O O O O O O O O O O O O
+The system shall offer the ability to pause and resume the refresh of data.,O O O O O entity O O O relashionship O entity O entity O
+The system shall provide charts for the Activity or Event actual versus assumed time.,O O O O O O O O O O O entity relashionship entity O
+The system will use the stored e-mail addresses as a primary means of communicating information to affected parties.,O O O O O O O O O O O attr O O O O O O O
+The system will notify affected parties for routine communication purposes  including but not limited to informing students of upcoming offered classes (timeline) and what their schedule will be/shall be.,O O O O O O O O O O O O O O O O attr O entity O O O entity O O O O entity O O O O
+The system will notify affected parties when changes occur affecting clinicals  including but not limited to clinical section capacity changes  and clinical section cancellations.,O O O O O O O O O O O O O O O O O O O O O O O O O
+The system will notify affected parties when changes occur affecting classes  including but not limited to class cancellations  class section detail changes  and changes to class offerings for a given quarter.,O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O entity O
+The system shall display Events or Activities.,O O O O O O O O
+The display shall have two regions:  left 2/3 of the display is graphical  right 1/3 of the display is a data table,O entity O O O O O O attr O O entity O O O attr O O entity O O O O
+The data displayed in both the nodes within the graph and the rows in the table are MSEL Summary data,O entity O O O O O O O entity O O O O O entity O O O entity
+The table side of the display shall be split into 2 regions: sequential and temporal.,O O entity O O entity O O O O O O O O O O O
+The top 1/4 of the table will hold events that are to occur sequentially.,O O O O O entity O relashionship O O O O O O O
+The bottom 3/4 of the table will hold events that occur according to its relevance to current time.,O O O O O entity O relashionship O O O entity O O entity O O entity O
+The system shall color code events according to their variance from current time.,O O O O O O O O O entity O O entity O
+The system shall provide a history report of changes made to the Activity or Event data,O O O O O O O O O O O O O O O entity
+The system shall update or create new property listings in the MLS,O O O O O O O O O O O O
+Realtor shall be able to generate a CMA report based on property criteria,O O O O O O O O entity O O attr O
+Program Administrators and Nursing Staff Members shall be able to add clinical classes or sections to a sequence of classes,O O O O O O O O O O O O O O O O O entity O O
+Program Administrators and Nursing Staff Members shall be able to add a new cohort to the system  identified by start month and year.,O O O O O O O O O O O O O entity O O O O O O entity O entity O
+Program Administrators and Nursing Staff Members shall be able to add new classes for the nursing department into the system.,O O O O O O O O O O O O O O O O O O O O O
+A class shall be either a non-clinical class or a clinical class.,O entity O O O O O entity O O O entity O
+A non-clinical class shall specify the course name  lecture room requirements  and instructor needs.,O O entity O relashionship O O attr O O O O O O O
+A clinical class shall specify the course name  lecture room requirements  clinical site needs  lecture instructor needs  and clinical lab instructor needs.,O O entity O relashionship O O attr O O O O O O O O O O O O O O O
+Program Administrators/Nursing Staff Members shall be able to create a new Program of Study.,O O O O O O O O O O O O O O O
+A Program of Study shall consist of a program name and listing of required classes (both clinical and non-clinical) that must be completed.,O O O O O O O O O O O entity O O O O O O O O O O O O O O
+Program Administrators and Nursing Staff Members shall have the ability to specify which classes are required for a Program of Study,O O O O O O O O O entity O O O O O O O O O O O
+The system shall be able to display a report of needed classes for a given quarter for all cohorts of all programs for Program Administrators/Nursing Staff MembersÃ¯Â¿Â½ planning purposes.,O O O O O O O O entity O O O O O relashionship entity O O attr O O O O O O O O O O O
+The report of needed classes shall include (but not be limited to) classes to be offered  number of sections needed  number of labs needed  and room types needed.,O entity O relashionship O O O O O O O O O O O O O relashionship entity O O relashionship entity O O relashionship O O O relashionship O
+Classes for a given cohort shall not conflict with regards to the time and day that they are offered.,O O O O entity O O O O attr O O entity O entity O O O O O
+Program Administrators and Nursing Staff Members shall be able to add a new clinical site into the system.,O O O O O O O O O O O O O O entity O O O O
+Clinical site information shall include (but not be limited to) the name of the site  contact person  and contact information.,O O O O O O O O O O O O O entity O O O O O O O O O
+Program Administrators and Nursing Staff Members shall be able to add a new clinical lab section for an existing clinical class into the System.,O O O O O O O O O O O O O O O O O O entity O entity O O O O
+A clinical lab section shall include the clinical site name  the class  instructor  day and time of the lab.,O O entity O O O O O O attr O O O O O entity O O entity O
+Program Administrators and Nursing Staff Members shall be able to add a student who has registered for a clinical class to a clinical lab section for that class.,O O O O O O O O O O O O entity O O O O O O entity O O O O O O O entity O
+The system shall allow a Program Administrator or Nursing staff member to remove a student from a clinical lab section.,O O O O O O O O O O O O relashionship O entity O O O O O O
+The system shall allow a Program Administrator/Nursing Staff Member to move a student from one clinical lab section to another clinical lab section corresponding to the same clinical class.,O O O O O O O O O O O O entity O O O O O O O O O O O O O O O entity O
+Program Administrators/Nursing Staff Members shall be able to cancel a clinical lab section only if there are no students registered for that clinical lab section.,O O O O O O O O O O O O O O O O relashionship O attr O O O O O O O
+A Program Administrator/Nursing Staff Member shall be able to add a new nursing student to the system.,O O O O O O O O O O O O O O O O O O
+A staff member shall have the ability to manage the progress of a part time student  which includes modifying their sequence of classes and timeline of classes.,O O O O relashionship O entity O relashionship O entity O O O O O O O entity O entity O O O entity O O O
+The system shall be able to display a printable summary for individual cohorts  which will include the students enlisted  the Program of study  sequence of classes  cohort progress through the program  and timeline of completion.,O O O O O O O O O entity O O O O O relashionship O O O O O O O attr O O entity O O O entity O entity O entity O
+The system shall be able to display a printable summary for individual clinical sites  which will include information on labs being held at that site for the given quarter (Clinical site  general information on labs held at that location  dates and times of all labs held there).,O O O O O O O O O entity O O O O O O O O O O O O O O entity O O relashionship entity O O entity O O O O O O O O O O attr O O O O O O O
+The system shall be able to display a printable summary for individual clinical labs  which will include (but not be limited to) class name  class number  lab section  listing of students enrolled  instructor  day(s)  time  and location.,O O O O O O O O O entity O O O O O O O O O O O O O O attr O attr O O O O O O O O O O O O entity O entity O
+The system shall be able to display a printable summary for individual nursing students  which will include (but not be limited to) student name  student ID  admission date  classes  credits  GPA  and the cohort that the student is enrolled in.,O O O O O O O O O entity O O O O O O O O O O O O O O attr O attr O O O O O O O O entity O O attr O O O O
+The system shall be able to display a printable summary of the system log.,O O O O O O O O O entity O O O O O
+The system shall contain contact information (e-mail and phone number) for all people relevant to the system  including (but not limited to) staff members  students  lecture instructors  clinical lab instructors  and clinical site administrators.,O O O O O O O O O O O O O O entity O O O O O O O O O O O O O O O O O O O O O O O O
+The system will notify affected parties when changes occur affecting cohorts  including but not limited to changes to the sequence for a cohortÃ¯Â¿Â½s program of study and changes to a given weekÃ¯Â¿Â½s schedule (lab cancelled this week due to instructor illness).,O O O O O O O O O O O O O O O O O O O entity O O O entity O entity O O O O O O O O entity relashionship O entity O O relashionship entity O O
+The system will notify affected parties when changes occur affecting specific students  including but not limited to changing a studentÃ¯Â¿Â½s status from full time to part time and moving a student to a different clinical section.,O O O O O O O O O entity O O O O O O O entity O O entity O O entity O O entity O entity O entity O O O O entity O
+Program Administrators/Nursing Staff Members shall have the ability to modify information relating to cohorts  including cohort identifier  program of study  preferred sequence of classes and quarters that a cohort will be taking specific classes.,O O O O O O O entity O O O O O O relashionship entity O entity O entity O entity O O O O O O entity O O entity O O O
+Program Administrators/Nursing Staff Members shall have the ability to modify information relating to a Program of Study within the Nursing Department  including the Program of study name  and required classes for that Program of Study.,O O O O O O O entity O O O O O O O O O O O O O entity O O O O attr O O O O O O O O O
+Program Administrators/Nursing Staff Members shall have the ability to modify information relating to a Clinical Site  including the clinical site name  site contact person  contact information  and address.,O O O O O O O entity O O O O O O O O entity O O O attr O O O O O O entity O
+Program Administrators/Nursing Staff Members shall have the ability to modify information relating to a Clinical Lab Section  including the clinical site name  the department/section for the lab  the class  instructor  day and time of lab  and contact information.,O O O O O O O entity O O O O O O O O O entity O O O attr O entity O O entity O O O O O entity O entity O O O O
+Program Administrators/Nursing Staff Members shall have the ability to modify information relating to a Nursing Student  including student ID  student name  phone number  e-mail  status (full time or part time)  and program of study.,O O O O O O O entity O O O O O O O O O O O O attr O O O entity O O entity O O entity O O entity O entity O

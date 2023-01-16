@@ -1,0 +1,2 @@
+12
+A national company selling household appliances wishes to carry out a first object analysis experiment with the UML method on a small subset of its IS. This subset concerns the follow-up of the personnel of the local agencies located in the regions. Each region is managed by a regional department which is in charge of a certain number of local agencies. A regional management is characterized by a code and a label. 

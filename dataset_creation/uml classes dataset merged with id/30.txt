@@ -1,0 +1,11 @@
+30
+Each college has a website
+Each college is structured into departments, each of which brings together specific teachers. Among these teachers, one of them is responsible for the department.
+A teacher is defined by his surname, first name, phone, email, date of taking office and his index.
+Each teacher teaches only one subject.
+Students take several subjects and receive a mark for each of them.
+For each student, we want to manage his name, first name, phone, email, as well as his year of entry to college.
+A subject can be taught by several teachers but always takes place in the same classroom (each having a specific number of places).
+We want to be able to calculate the average by subject as well as by department
+We also want to calculate the general average of a student and be able to display the subjects in which he has not been noted
+Finally, we must be able to print the data sheet (, first name, phone, email) of a teacher or a student.

@@ -1,0 +1,2 @@
+37
+A person is characterized by his name, his first name, his sex and his age. The objects of the Person class must be able to calculate their income and expenses. The attributes of the class are private; the name, the first name and the age of the person must be accessible by public operations.

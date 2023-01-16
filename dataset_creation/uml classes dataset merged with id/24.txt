@@ -1,0 +1,2 @@
+24
+A company consists of departments. Departments are located in one or more offices. One office acts as a headquarter. Eachdepartment has a manager who is recruited from the set of employees.
